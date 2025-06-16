@@ -1,36 +1,94 @@
-# Data_Visualization_GroupCA
+# 📊 Data Visualization – Group CA
 
-Dataset\
-Source\
-The dataset is taken from the UCI Irvine machine learning repository ,dataset is about the phone campaigns with the individual customers of Portuguese banking services, Data is Multivariate, Business related and classification related problem. Data cleaning is done in python pandas library checked for missing values and Info of the dataset variables everything looks fine no missing values, identified unique categorical values in each variable this helps how we are going to deal with this data.\
-The dataset can be accessed at: https://archive.ics.uci.edu/dataset/222/bank+marketing \
-Variables\
-1. Age: Indicates the age of the individual contacted during the campaign. (numeric)
-2. Job: Indicates the type of job that the individual holds. (Categorical: Retired, Student, Management, Housemaid, Self-employed, admin, technician, unemployed, unknown, services, entrepreneur, blue-collar)
-3. Marital: Indicates the marital status of the individual (Categorical: Single, Divorced, Married, Unknown)
-4. Education: Indicates the level of education achieved by the individual. (Categorical: Primary, Secondary, Tertiary, Unknown)
-5. Default: States whether the person has a default loan. (Binary: yes/no)
-6. Housing: Indicates whether the individual has housing loan. (Binary: yes/no)
-7. Loan: Indicates whether the individual has taken a personal loan. (Binary: yes/no)
-8. Balance: Indicates the bank balance of the individual. (numeric)
-9. Contact: Indicates the mode of communication used of contacting the individual during the campaign. (Categorical: Cellular, Telephone, Unknown)
-10. Month: Indicates the month when the individual was last contacted. (Categorical: Jan, Feb, Mar, Apr, May, June, July, Aug, Sep, Oct, Nov, Dec)
-11. Duration: Indicates the duration of the last call made with an individual. (numeric in seconds)
-12. Campaign: Indicates the number of times an individual was contacted during the current campaign. (numeric)
-13. Pdays: Indicates the number of days it has been since the person was last contacted. (numeric)
-14. Previous: Indicates the number of times the individual was contacted during the last campaign. (numeric)
-15. Poutcome: What was the outcome of the previous campaign for the given individual. (Categorical: Success, Failure, Other, Unknown)
-16. Y: Indicates the outcome of the current campaign. (Binary: yes/no) \
- 
-Vision\
-The goal of the project is to analyze whether customers will subscribe to a term deposit with the bank or not. It is based on 3 main factors throughout the report:\
-1. Demographic Characteristics: These characteristics consist of the personal details of the client including age, education, marital status, and job type.
-2. Financial Characteristics: These attributes mainly encompass the financial conditions of the individual including their loan status (personal, default, or housing), and their bank balance.
-3. Campaign Characteristics: These terms mainly include details from the current and previous campaigns conducted to market the term deposit idea to different individuals. \
+## 📁 Project Overview
 
-Our goal is to understand the changes in purchase rate, i.e., the rate at which customers invest in the term deposit for the bank, based on these different characteristics, and find the key drivers that affect purchase rate, while also identifying high-value customers and how more customers can be convinced to invest with the bank. \
+This project explores the **Bank Marketing Dataset** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/222/bank+marketing), which captures the results of phone campaigns conducted by a Portuguese banking institution. The primary objective is to determine the **likelihood of customers subscribing to a term deposit**, using various demographic, financial, and campaign-related features.
 
-Technologies Used\
-1. Excel by Sai Nikhil
-2. Power BI by Himansh Arora
-3. Tableau by Shruthi
+We utilized **Power BI**, **Tableau**, and **Excel** to analyze the data from different perspectives and visualize key insights that can help banks optimize marketing strategies and customer targeting.
+
+---
+
+## 🧠 Problem Statement
+
+To predict and analyze **whether a customer will subscribe to a term deposit**, using:
+
+- **Demographic Characteristics** (e.g., age, job, education)
+- **Financial Status** (e.g., housing loans, personal loans, balance)
+- **Campaign History** (e.g., number of contacts, outcomes, call durations)
+
+The aim is to:
+- Understand key drivers that influence customer decisions
+- Identify high-value customer segments
+- Optimize marketing campaign effectiveness
+
+---
+
+## 📂 Dataset Summary
+
+**Source:** [UCI Bank Marketing Dataset](https://archive.ics.uci.edu/dataset/222/bank+marketing)  
+**Type:** Multivariate, classification  
+**Preprocessing:** Missing values checked and cleaned using Python (Pandas)
+
+**Main Features:**
+- `age`, `job`, `marital`, `education`, `default`, `housing`, `loan`
+- `balance`, `contact`, `month`, `duration`, `campaign`, `pdays`, `previous`, `poutcome`, `y` (target variable)
+
+---
+
+## 🧮 Technologies Used
+
+| Tool      | Contributor     | Purpose                   |
+|-----------|-----------------|---------------------------|
+| Excel     | Sai Nikhil      | Data summary and exploration |
+| Power BI  | Himansh Arora   | Interactive dashboard creation |
+| Tableau   | Shruthi         | Visual analytics and storyboards |
+
+---
+
+## 📊 Power BI Dashboard
+
+The Power BI dashboard focuses on the three main dimensions: **Demographic**, **Financial**, and **Campaign** characteristics. Key metrics and visuals were created to explore customer trends, campaign success rates, and influential variables.
+
+### 🔹 Demographic Analysis
+
+![Demographic Dashboard](BMA1.png)
+
+---
+
+### 🔹 Financial Profile & Behavior
+
+![Financial Dashboard](BMA2.png)
+
+---
+
+### 🔹 Campaign Performance Insights
+
+![Campaign Dashboard](BMA3.png)
+
+---
+
+## 🔍 Key Insights
+
+- **Age and job type** have a significant impact on deposit subscription rates.
+- Customers with **no personal loans** and **higher balances** show greater interest in term deposits.
+- **Call duration** and **contact timing (month)** strongly correlate with campaign success.
+- Repeated contacts do not always increase success rate — targeting strategy matters.
+
+---
+
+## ✅ Conclusion
+
+This project offers a comprehensive view of how customer demographics, financial history, and past interactions influence the outcome of marketing campaigns. These insights can help the bank:
+
+- Improve **targeting** for future campaigns
+- Tailor **messaging and timing**
+- Focus on **high-yield customer segments**
+
+---
+
+## 📌 How to Use
+
+1. Clone or download this repository.
+2. Open the Power BI report to interact with visuals.
+3. Refer to the images in this README for a preview.
+4. Source data is available [here](https://archive.ics.uci.edu/dataset/222/bank+marketing).
