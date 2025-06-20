@@ -1,4 +1,4 @@
-# 📊 Data Visualization – Group CA
+# 📊 Bank Marketing Analysis
 
 ## 📁 Project Overview
 
